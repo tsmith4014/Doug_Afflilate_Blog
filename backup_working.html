@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survivalist Central</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="destination-url.html" class="circle">
+        <!-- Image link -->
+        <!-- Image is set as background in CSS -->
+      </a>
+      <div class="circle-nav">
+        <a href="#" class="link">Tactical Gear</a>
+        <a href="#" class="link">Survival Skills & Emergency Prep</a>
+        <a href="#" class="link">Prepper Guides</a>
+        <a href="#" class="link">Bug-Out Essentials</a>
+        <a href="#" class="link">Blog Post</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+body, html { height: 100%; margin: 0; font-family: Arial, sans-serif;
+background-color: #f4f4f4; } .container { position: relative; width: 100%;
+height: 100vh; /* Full viewport height */ display: flex; justify-content:
+center; align-items: center; } .circle { width: 160VH; /* Adjusted to your
+specification for size */ height: 80vh; /* Making it an oval */ border-radius:
+50%; background: url('./images/landing_image.png') no-repeat center center; /*
+Confirm the correct path */ background-size: cover; position: absolute; }
+.circle-nav { position: absolute; width: 100%; height: 100%; } .link {
+background-color: white; padding: 10px 20px; text-decoration: none; color:
+black; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position:
+fixed; /* Fixed to place them relative to the viewport */ } /* Placing links in
+the corners of the viewport */ .link:nth-child(1) { top: 10px; left: 10px; } /*
+Top left corner */ .link:nth-child(2) { top: 10px; right: 10px; } /* Top right
+corner */ .link:nth-child(3) { bottom: 10px; left: 10px; } /* Bottom left corner
+*/ .link:nth-child(4) { bottom: 10px; right: 10px; } /* Bottom right corner */
+.link:nth-child(5) { bottom: 50px; right: 50%; transform: translateX(50%); } /*
+Center bottom */
