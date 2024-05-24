@@ -1,0 +1,1 @@
+the portal will have a frame and the links will curve and hug that frame...the image we have now will be the backend.  The links when hover will give a preview in the portal frame of what the link is.
