@@ -37,7 +37,7 @@ a.circle {
   width: 160vh; /* Your specified size */
   height: 80vh; /* Oval shape */
   border-radius: 50%;  /* Makes it a circle */
-  background: url('./images/landing_image.png') no-repeat center center;  /* Background image */
+  background: url('./images/landing_image.webp') no-repeat center center;  /* Background image */
   background-size: cover;  /* Cover the entire area */
   position: absolute;  /* Absolute positioning */
 }
