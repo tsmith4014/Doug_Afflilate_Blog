@@ -1,59 +1,65 @@
+/* Sets the height of body and html to 100% and removes default margin */
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;  /* Sets default font family */
+  background-color: #f4f4f4;  /* Sets background color */
 }
 
+/* Styles for the page header */
 .page-header {
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
+  width: 100%;  /* Full width */
+  padding: 20px 0;  /* Padding top and bottom */
+  text-align: center;  /* Centers text */
   background-color: #333;  /* Dark background for the header */
   color: white;  /* White text color */
   font-size: 24px;  /* Larger text size for visibility */
   position: fixed;  /* Make the header fixed at the top */
-  top: 0;
-  left: 0;
+  top: 0;  /* Position at the very top */
+  left: 0;  /* Align to the left */
   z-index: 1000;  /* Ensures the header is above all other content */
 }
 
+/* Container for centering content */
 .container {
-  position: relative;
-  width: 100%;
+  position: relative;  /* Relative positioning */
+  width: 100%;  /* Full width */
   height: 100vh; /* Adjusted to fill the full viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;  /* Use flexbox */
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Center content vertically */
   padding-top: 60px;  /* Added padding to prevent overlap with the fixed header */
 }
 
+/* Style for the circle element */
 a.circle {
-  display: block;
+  display: block;  /* Block level element */
   width: 160vh; /* Your specified size */
   height: 80vh; /* Oval shape */
-  border-radius: 50%;
-  background: url('./images/landing_image.png') no-repeat center center;
-  background-size: cover;
-  position: absolute;
+  border-radius: 50%;  /* Makes it a circle */
+  background: url('./images/landing_image.png') no-repeat center center;  /* Background image */
+  background-size: cover;  /* Cover the entire area */
+  position: absolute;  /* Absolute positioning */
 }
 
+/* Circle navigation overlay */
 .circle-nav {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  position: absolute;  /* Absolute positioning */
+  width: 100%;  /* Full width */
+  height: 100%;  /* Full height */
+  pointer-events: none;  /* Disable pointer events */
 }
 
+/* Style for the links */
 .link {
-  background-color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: black;
-  border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  position: fixed;
-  pointer-events: auto;
+  background-color: white;  /* Background color */
+  padding: 10px 20px;  /* Padding inside the link */
+  text-decoration: none;  /* Remove underline */
+  color: black;  /* Text color */
+  border-radius: 20px;  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Box shadow for depth */
+  position: fixed;  /* Fixed positioning */
+  pointer-events: auto;  /* Enable pointer events */
 }
 
 /* Link positioning and colors as specified */
@@ -62,3 +68,4 @@ a.circle {
 .link:nth-child(3) { bottom: 10px; left: 10px; background-color: red; color: white; }
 .link:nth-child(4) { bottom: 10px; right: 10px; background-color: blue; color: white; }
 .link:nth-child(5) { top: 90px; right: 50%; transform: translateX(50%); background-color: white; color: red; }
+
